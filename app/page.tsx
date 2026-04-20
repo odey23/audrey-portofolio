@@ -388,7 +388,7 @@ export default function Home() {
           <div className="relative z-30">
             <ChromaGrid
               items={listProyek}
-              onItemClick={handleProjectClick}
+              // onItemClick={handleProjectClick}
               radius={500}
               damping={0.45}
               fadeOut={0.6}
@@ -403,6 +403,9 @@ export default function Home() {
               status="Online"
               contactText="Contact Me"
               avatarUrl="./assets/2.png"
+              miniAvatarUrl="/avatar-small.png"   // ✅ tambahin
+              behindGradient="linear-gradient(135deg, #667eea, #764ba2)" // ✅
+              innerGradient="linear-gradient(135deg, #ff9a9e, #fad0c4)"  // ✅
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -523,7 +526,7 @@ export default function Home() {
                         type="email"
                         className="w-full px-4 py-3 border border-blue-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/50 backdrop-blur-sm text-black"
                         placeholder="your.email@gmail.com"
-                      /> 
+                      />
                     </div>
 
                     <div>

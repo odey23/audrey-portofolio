@@ -1,4 +1,5 @@
 'use client'
+import { Easing } from "framer-motion"
 import { motion } from "framer-motion";
 import type { Transition } from "framer-motion";
 import { useEffect, useRef, useState, useMemo } from 'react';
